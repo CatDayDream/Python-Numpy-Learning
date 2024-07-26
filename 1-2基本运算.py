@@ -46,5 +46,11 @@ print("矩阵a中最小的值是：\n", n)
 o = a.sum()
 print("矩阵a中所有数据的总和为：\n", o)
 
-p = a.mean()
-print("矩阵a中数据平均值是：\n", p)
+p = a.sum(axis=0)
+print("矩阵a中将每行数据相加：\n", p)
+
+q = a.sum(axis=1)
+print("矩阵a中将每列数据相加：\n", q)
+
+r = a.mean()
+print("矩阵a中数据平均值是：\n", r)
